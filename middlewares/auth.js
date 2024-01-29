@@ -27,3 +27,4 @@ const requirePermission = (role) => {
         next();
     }
 }
+module.exports = {requirePermission, authentication} 
