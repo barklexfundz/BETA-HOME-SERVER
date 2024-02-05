@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const managerSchema = new Schema({
     name: {
-        type: String,
+        type: String, 
         reqired: true
     },
     phoneNumber: {
@@ -46,7 +46,7 @@ const propertySchema = new Schema(
       type: String,
       enum: ["house", "land"],
     },
-    tags: {
+    tags: { 
       type: String,
       enum: ["luxury", "affordable", "comfortable", "spacious"],
     },
