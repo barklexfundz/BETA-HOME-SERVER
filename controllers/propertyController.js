@@ -12,9 +12,9 @@ const handleAddProperty = async (req, res) => {
     tags,
     propertyStatus,
     bedroom,
-    bathrooms,
+    bathroom,
     garage,
-    squareFeet,
+    squarefeet,
     name,
     phoneNumber,
     whatsappNumber,
@@ -74,11 +74,11 @@ const handleAddProperty = async (req, res) => {
         tags,
         propertyStatus,
         bedroom,
-        bathrooms,
+        bathroom,
         garage,
         media,
         salesSupport,
-        squareFeet,
+        squarefeet,
     });
 
     res.status(201).json({success: true, property});
@@ -145,9 +145,9 @@ const handleEditProperty = async (req, res) => {
     tags,
     propertyStatus,
     bedroom,
-    bathrooms,
+    bathroom,
     garage,
-    squareFeet,
+    squarefeet,
     name,
     phoneNumber,
     whatsappNumber,
@@ -173,9 +173,9 @@ const handleEditProperty = async (req, res) => {
     existingProperty.propertyStatus =
       propertyStatus ?? existingProperty.propertyStatus;
     existingProperty.bedroom = bedroom ?? existingProperty.bedroom;
-    existingProperty.bathroom = bathrooms ?? existingProperty.bathroom;
+    existingProperty.bathroom = bathroom ?? existingProperty.bathroom;
     existingProperty.garage = garage ?? existingProperty.garage;
-    existingProperty.squarefeet = squareFeet ?? existingProperty.squarefeet;
+    existingProperty.squarefeet = squarefeet ?? existingProperty.squarefeet;
 
     // Update sales support information
     existingProperty.salesSupport = {
